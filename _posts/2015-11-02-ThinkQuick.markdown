@@ -1,9 +1,9 @@
 ---
 layout:     project
-title:      "ThinkQuick! App"
-subtitle:   "free-for-all race to solve problems in real time"
+title:      "ThinkQuick! "
+subtitle:   "free-for-all real-time problem solving"
 author:     "Neil Gordon"
-date:       2015-11-01 12:00:00
+date:       2015-11-02 12:00:00
 ---
 
 
