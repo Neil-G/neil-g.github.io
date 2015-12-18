@@ -10,4 +10,4 @@ date:       2015-10-31 12:00:00
 
 
 <div id='root'></div>
-<script src="{{ "/js/bundleMobile.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/bundlet.js " | prepend: site.baseurl }}"></script>
