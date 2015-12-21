@@ -13,3 +13,11 @@ date:       2015-12-18 12:00:00
 <div id='root'></div>
 
 <script src="{{ "/js/volumeCalculatorBundle.js " | prepend: site.baseurl }}"></script>
+
+<style>
+	@media (max-width: 550px) {
+	  .center-text {
+	    text-align: center;
+	  }
+	}
+</style>
