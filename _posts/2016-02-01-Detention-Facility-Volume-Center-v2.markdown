@@ -17,5 +17,5 @@ date:       2016-02-01 12:00:00
 
 <style>
 	body { background-color: #B0BEC5; }
- 	.answer-box:hover { background-color: #FBE9E7;	}
+ 	.answer-box:hover { background-color: #FBE9E7;	cursor: pointer; }
 </style>
