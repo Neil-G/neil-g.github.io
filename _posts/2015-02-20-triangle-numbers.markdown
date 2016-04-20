@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      "Triangle Numbers"
-subtitle:   "And the Long Way to a Simple Solution"
-date:       2015-02-20 12:00:00
+subtitle:   "The Long Way to a Simple Solution"
+date:       2015-12-01 12:00:00
 author:     " "
 comments:   true
 header-img: "img/post-bg-05.jpg"

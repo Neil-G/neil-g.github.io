@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      "Max Contiguous Subarrays and Kadane's Algorithm"
-subtitle:   "And Illuminating Algorithms with print()"
-date:       2015-02-14 12:00:00
+subtitle:   "Illuminating Algorithms with print()"
+date:       2015-11-01 12:00:00
 author:     " "
 comments:   true
 header-img: "img/post-bg-01.jpg"

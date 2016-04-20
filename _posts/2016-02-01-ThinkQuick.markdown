@@ -1,9 +1,9 @@
 ---
 layout:     project
 title:      "ThinkQuick! "
-subtitle:   "free-for-all real-time problem solving"
+subtitle:   "Free-for-all real-time problem solving"
 author:     "Neil Gordon"
-date:       2015-11-02 12:00:00
+date:       2016-02-01 12:00:00
 ---
 
 
@@ -17,6 +17,10 @@ date:       2015-11-02 12:00:00
 
 	.float-left-on-small { right: 0px; }
 
+	.login-box {float: right; padding: 8px;}
+
+	.show-border {border: 1px solid tomato; box-sizing: border-box;}
+
 
 	/* Larger than mobile */
 	@media (min-width: 400px) {
@@ -26,14 +30,14 @@ date:       2015-11-02 12:00:00
 	/* Larger than phablet (also point when grid becomes active) */
 	@media (min-width: 550px) {
 
+	  .show-small {display: none;}
 	}
 
 	/* Larger than tablet */
 	@media (min-width: 750px) {
 	  div.game-container {
-	    width: 80%;
+	    width: 100%;
 	  }
-	  .show-small {display: none;}
 	}
 
 	/* Larger than desktop */
@@ -47,14 +51,14 @@ date:       2015-11-02 12:00:00
 	@media (max-width: 400px) {}
 
 	/* Smaller than phablet (also point when grid becomes active) */
-	@media (max-width: 550px) {}
+	@media (max-width: 550px) {
+	  .login-box { float: left; padding: 18px 8px 0px;}
+	  .hide-small {display: none; }
+	}
 
 	/* Smaller than tablet */
 	@media (max-width: 750px) {
-	  .hide-small {
-	    display: none;
-	  }
-	  .float-left-on-small { left: 4px; }
+	  .float-left-on-small { float: left; }
 	}
 
 	/* Smaller than desktop */

@@ -1,9 +1,9 @@
 ---
 layout:     project
-title:      "Engineering Progress"
-subtitle:   "Engineering"
+title:      "Research Reviewer"
+subtitle:   "A tool to keep track of the flood of information"
 author:     "Neil Gordon"
-date:       2015-01-01 12:00:00
+date:       2016-01-01 12:00:00
 ---
 
 
@@ -46,9 +46,9 @@ date:       2015-01-01 12:00:00
 	  /*padding-top: 12px;*/
 	}
 
-	.entry:nth-child(even) {
+	/*.entry:nth-child(even) {
 	  background-color: #f2f2f2;
-	}
+	}*/
 
 
 	tr:nth-child(even) {
