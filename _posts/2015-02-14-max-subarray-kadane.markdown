@@ -148,7 +148,7 @@ Finally, our max sum contiguous subarray from array [-6, 7, -2, 2, 4, -4, -13, 1
 
 
 <h3 class="section-heading" id="hackerrank-kadane-video">Maximum Contiguous Subarray Problem O(n) (Python)</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EK71U-vTOt4" frameborder="0" allowfullscreen></iframe>
+<iframe style="max-width:560px;" width="100%" height="315" src="https://www.youtube.com/embed/EK71U-vTOt4" frameborder="0" allowfullscreen></iframe>
 <br/>
 <br/>
 <br/>
