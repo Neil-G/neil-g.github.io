@@ -14140,9 +14140,9 @@ var render = function render(Component) {
 
 render(_RootApp2.default);
 
-module.hot.accept('./RootApp', function () {
-  render(_RootApp2.default);
-});
+// module.hot.accept('./RootApp', function () {
+//   render(_RootApp2.default);
+// });
 ;
 
 var _temp = function () {
