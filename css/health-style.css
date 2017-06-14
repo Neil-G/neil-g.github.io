@@ -120,6 +120,7 @@ a:hover {
     right: 0px;
     text-align: center;
     text-transform: uppercase;
+    overflow-y: scroll;
 }
 
 .nav_menu__open {
