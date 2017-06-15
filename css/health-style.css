@@ -2,7 +2,7 @@
  * css styles go here
  */
 
-div { box-sizing: border-box; border: 1px solid tomato; }
+/* div { box-sizing: border-box; border: 1px solid tomato; } */
 
 @font-face {
     font-family: sfns;
