@@ -4,13 +4,14 @@
 
 /*div { box-sizing: border-box; border: 1px solid tomato; }*/
 
-@font-face {
-    font-family: sfns;
-    src: url(./../fonts/sfns-system-san-francisco-display-593f1797e57a3.ttf);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body, html {
+  min-height: 100%;
 }
 
 body {
-  font-family: 'sfns', sans-serif;
+  font-family: 'Roboto', sans-serif;
   /*font-family: Helvetica,Arial,sans-serif;*/
   background: black;
   color: white;
@@ -24,8 +25,6 @@ a, a:visited {
 a:hover {
   text-decoration: underline;
 }
-
-
 
 
 #header {
@@ -63,7 +62,7 @@ a:hover {
 .bar:after,
 .bar:before {
   width: 30px;
-  height: 6px;
+  height: 2px;
 }
 
 .bar {
@@ -158,7 +157,7 @@ a:hover {
     border-top: 1px solid gray;
     background: #0C1724;
     transition: 1s all ease;
-    z-index: 20;
+    /*z-index: 20;*/
     /*padding-bottom: 20px;*/
 }
 
@@ -172,7 +171,7 @@ a:hover {
 }
 
 .container__bottom_expanded--closed {
-    bottom: -200px;
+    bottom: -100px;
 }
 
 .container__bottom_collapsed {
@@ -198,7 +197,7 @@ a:hover {
 }
 
 .nav-menu-item:hover {
-    color: tomato;
+    color: cyan;
 }
 
 .nav-menu-item--shown:nth-child(odd),
@@ -225,12 +224,14 @@ a:hover {
 
 
 .gradient-body {
-    background: url(/assets/img/gradient-bg.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    background-size: cover;
+    background: rgba(216,215,221,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(216,215,221,1) 0%, rgba(0,9,20,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(216,215,221,1)), color-stop(100%, rgba(0,9,20,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(216,215,221,1) 0%, rgba(0,9,20,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(216,215,221,1) 0%, rgba(0,9,20,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(216,215,221,1) 0%, rgba(0,9,20,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(216,215,221,1) 0%, rgba(0,9,20,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d7dd', endColorstr='#000914', GradientType=1 );
 }
 
 .copy-write-footer {
@@ -290,4 +291,87 @@ a:hover {
   .facet_sidebar {
     display: none;
   }
+}
+
+#bottom-panel-toggle {
+    transition: 1s all ease;
+}
+.bottom_panel__toggle--open {
+    transform: rotate(0deg);
+}
+
+.bottom_panel__toggle--close {
+    transform: rotate(180deg);
+}
+
+#bottom-panel-video {
+    transition: 1s all ease;
+}
+
+.bottom_panel__video--open {
+    /*transform: scale(1,1);*/
+    opacity: 1;
+    display: block;
+}
+
+.bottom_panel__video--closed {
+    /*transform: scale(1,0);*/
+    opacity: 0;
+    display: block;
+}
+
+.bottom_panel__video--hidden {
+    display: none;
+}
+
+#bottom-panel-section-1,
+#bottom-panel-section-2,
+#bottom-panel-section-3 {
+    transition: 1s all ease;
+}
+
+#bottom-panel-section-1.collapsed {
+    flex: 2;
+    padding: 0 20px;
+}
+
+#bottom-panel-section-1.expanded {
+    flex: 1;
+    padding: 20px 20px 0;
+}
+
+#bottom-panel-section-2.collapsed {
+    flex: 0;
+    opacity: 0;
+}
+
+#bottom-panel-section-2.expanded {
+    flex: 2;
+    opacity: 1;
+}
+
+#bottom-panel-section-3.collapsed {
+    border-left: 1px solid #d8d7dd;
+    transform: translateY(-24px);
+    padding-top: 30px;
+}
+
+#bottom-panel-section-3.expanded {
+    border-left: 1px solid #0C1724;
+}
+
+#video-label-collapsed.hidden {
+    display: none;
+}
+
+#video-label-collapsed.visible {
+    display: block;
+}
+
+#video-label-expanded.hidden {
+    display: none;
+}
+
+#video-label-expanded.visible {
+    display: block;
 }
