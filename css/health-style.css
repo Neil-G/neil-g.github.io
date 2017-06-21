@@ -15,6 +15,7 @@ body {
   /*font-family: Helvetica,Arial,sans-serif;*/
   background: black;
   color: white;
+  height: 300vh;
 }
 
 a, a:visited {
@@ -244,7 +245,7 @@ a:hover {
 }
 
 .home-page-portrait {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     right: 0;
     height: calc(100vh - 80px);
@@ -252,11 +253,12 @@ a:hover {
 }
 
 .container__home-page-text {
-    position: fixed;
+    position: absolute;
     top: 40%;
-    left: 28%;
+    left: 16%;
     letter-spacing: 2px;
     word-spacing: 3px;
+    width: 40%;
 }
 
 @media (min-width: 768px) {
@@ -374,4 +376,46 @@ a:hover {
 
 #video-label-expanded.visible {
     display: block;
+}
+
+#bottom-panel-section-2.expanded {
+    opacity: 1;
+}
+
+#bottom-panel-section-2.collapsed {
+    opacity: 0;
+}
+
+/*
+  SKROLLER PARALLAX
+*/
+
+.page {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  /*bottom: 0px;*/
+  background: black;
+  padding-top: 80px;
+}
+
+#page-1 {
+  z-index: -40;
+}
+
+#page-2 {
+  z-index: -39;
+}
+
+#page-3 {
+  z-index: -38;
+}
+
+#page-4 {
+  z-index: -37;
+}
+
+#page-4 {
+  z-index: -36;
 }
