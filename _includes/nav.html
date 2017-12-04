@@ -1,26 +1,13 @@
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top" style="color:#738FAE;">
-    <div class="container-fluid" style="border-bottom:1px solid tomato" >
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <a class="navbar-brand" href="{{ site.baseurl }}/">Home</a>
-            <a class="navbar-brand" href="/about" style="float:right;">About Me</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="{{  'about' | prepend: site.baseurl }}/">About Me</a>
-                </li>
-                {% for page in site.pages %}{% if page.title %}
-                <li>
-                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                </li>
-                {% endif %}{% endfor %}
-            </ul>
-        </div> -->
-        <!-- /.navbar-collapse -->
+<nav id="top-nav">
+    <div class="top-nav-section_left">
+        <div 
+            class="top-nav-link"
+            onclick="gracefulNavigation()">Neil-G</div>
     </div>
-    <!-- /.container -->
+    <div class="top-nav-section_right">
+        <div class="top-nav-link">Explore</div>
+        <div class="top-nav-link">Portfolio</div>
+        <div class="top-nav-link">About Me</div>
+    </div>
 </nav>

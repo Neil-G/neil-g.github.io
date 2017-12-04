@@ -3,37 +3,14 @@ layout: default
 ---
 
 <!-- Page Header -->
-<header class="intro-header header-custom" style="">
+<!-- <header class="intro-header header-custom" style="">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading" style="padding:60px auto 30px;">
-                    <h1 class="heading">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
-                       <br/> <span class="subheading">{{ page.description }}</span>
-                    </h1>
-                  
-                </div>
-            </div>
-        </div>
+        <h1 class="site-title"> Life and Times on the FrontEnd 🙏</h1>
+        <p class="site-subtitle"> Hi and welcome to my blog where I write tackle various frontend topics and try things  </p>
     </div>
-</header>
+</header> -->
 
 <!-- Main Content -->
 <div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			{{ content }}
-		</div>
-	</div>
+	{{ content }}
 </div>
-
-
-
-<style>
-
-.header-custom {
-    background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');
-    border-bottom: 1px solid tomato;
-}
-
-</style>

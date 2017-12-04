@@ -3,14 +3,21 @@
 
 {% include head.html %}
 
-<body>
+
+<body class="transition-wrapper_page">
 
     {% include nav.html %}
 
-    {{ content }}
-
-    
-
+	<div class="transition-wrapper_page" id="transition-wrapper">
+    	{{ content }}
+    <div>
+    	
+<script>
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		document.getElementById('transition-wrapper').style.opacity = 1;
+	  //do work
+	});
+</script>
 </body>
 
 </html>
