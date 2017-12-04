@@ -1,0 +1,305 @@
+
+@import url('https://fonts.googleapis.com/css?family=Karla|Fredericka+the+Great');
+
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.transition-wrapper_page {
+	transition: 0.4s opacity ease;
+	animation-name: fade-in;
+	animation-duration: 2.4s;
+
+}
+
+body {
+	// color: white;
+	// padding: 80px 0;
+	// background-image: url("/assets/img/white-tile.jpg") !important;
+	transition: 0.3s opacity;
+	// background-repeat: no-repeat !important;
+	// background-size: cover !important;
+	font-family:
+	font-family: 'Karla', sans-serif;
+	// opacity: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	font-size: inherit !important;
+}
+
+#transition-wrapper {
+	opacity: 0;
+}
+
+.container {
+	padding-top: 60px;
+}
+
+/* Top Nav */
+
+#top-nav {
+	height: 80px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 12px;
+	// border-bottom: 1px solid #90A4AE;
+	// background: url("/assets/img/dark-triangles-tile.png"); 
+	background: #0C0D11;
+	// background: rgba(0,0,0,0);
+	color: white;
+	z-index: 999;
+	display: flex;
+}
+
+.top-nav-section_left {
+	width: 50%;
+	margin: auto 0;
+}
+
+.top-nav-section_right {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 24px;
+	margin: auto 0;
+}
+
+.top-nav-link {
+	margin-left: 26px;
+	font-weight: lighter;
+
+}
+
+.top-nav-link:hover {
+	cursor: pointer;
+	color: #B3E5FC;
+}
+
+/* Landing */
+.landing-header {
+	background-image: url("/assets/img/star-soft-black-tile.jpg") !important;
+	height: 320px;
+	width: 100%;
+	background: #EBEBEB;
+	display: flex;
+	flex-direction: column;
+	padding-left: 10%;
+	// font-family: 'Fredericka the Great', cursive !important;
+	font-size: 4.6rem;
+	border-bottom: 1px solid rgba(0,0,0,0.15) !important;
+	// font-weight: bolder;
+	color: white;
+
+}
+
+/* Article Preview Tiles */
+.articles-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	width: 80%;
+	max-width: 1220px;
+	margin: 60px auto;
+	align-items: stretch;
+}
+
+
+.article-preview-container {
+	width: 100%;
+	max-width: 600px;
+	padding: 8px;
+	margin: 2px auto;
+}
+
+
+@media (max-width: 800px) {
+	.articles-container,
+	.article-preview-container { 
+		width: 100%;
+		border: 0;
+	}
+	.article-preview-container { 
+		border: 0;
+		// border-top: 1px solid rgba(0,0,0,0.15);
+		// border-bottom: 1px solid rgba(0,0,0,0.15);
+	}
+}
+
+
+@media (max-width: 1400px) {
+	// .article-preview-container {
+	// 	max-width: 580px;
+	// 	min-width: 50%;
+
+	// }
+}
+
+@media (max-width: 1020px) {
+	.article-preview-container {
+		// min-width: 80%;
+		// width: 80%;
+		// margin: auto;
+
+	}
+}
+
+.article-tile {
+	position: relative;
+	// width: 420px!important; 
+	height: 600px !important; 
+	// margin: 16px !important; 
+	border-radius: 0 !important; 
+	transition: 0.3s all !important;
+	cursor: pointer !important;
+	border: 1px solid rgba(0,0,0,0.15) !important;
+	background: white !important;
+	border-radius: 2px !important;
+}
+
+.article-tile:last-child {
+}
+
+// @media (max-width: 992px) {
+// 	.article-tile {
+// 		width: 80% !important;
+
+// 	}
+// }
+
+.article-tile:hover {
+	// background: white !important;
+	// border: 2px solid #90A4AE !important;
+}
+
+.article-tile > .header-image {
+	height: 168px;
+	border-bottom: 1px solid rgba(0,0,0,0.2) !important;
+	background-size: cover;
+	// background: white;
+	background-repeat: none;
+	background-image: url('/assets/img/engineering-measurement.jpg');
+}
+
+.article-tile > .content {
+	padding: 40px 48px !important;
+	// background: #FFF8E1;
+}
+
+.article-tile > .content:hover {
+	color: #0085a1;
+}
+
+.article-tile > .content > .title {
+	margin-bottom: 0px !important;
+	line-height: 2.2rem;
+	font-weight: bolder !important;
+	font-size: 2.4rem !important;
+	color: black;
+}
+
+.article-tile > .content > .subtitle {
+	margin-top: 10px;
+	max-width: 80%;
+}
+
+.article-tile > .content > .tags {
+	margin-top: 30px;
+}
+
+.article-tile > .content > .tags > .tag {
+	margin-right: 24px;
+}
+
+.article-tile > .content > .description {
+	margin-top: 30px;
+	// text-indent: 20px;
+}
+
+.article-tile > .content > .meta {
+	position: absolute;
+	bottom: 40px;
+	left: 48px;
+}
+
+
+
+
+
+.article-tile > .content > .description,
+.article-tile > .content > .extra-content {
+	font-family: 'Karla', sans-serif;
+}
+
+.article-heading-title {
+	font-size: 3rem !important;
+	font-weight: bolder !important;
+}
+
+
+
+
+/* Landing */
+
+.site-title {
+	text-align: center;
+}
+
+.site-subtitle {
+	text-align: center;
+}
+
+
+/* Post */
+
+article > .container {
+	// width: 80%;
+	margin: auto;
+	padding: 16px;
+}
+
+.article-container {
+	background: white; 
+	min-height: 100vh; 
+	// padding: 100px 20px;
+	// max-width: 960px;
+	margin: auto;
+}
+
+.article-wrapper {
+	max-width: 960px;
+	margin: auto;
+}
+
+.intro-header {
+	padding: 28px 16px;
+	// background: #FFECB3;
+
+}
+
+.post-header-img {
+	background: url('/assets/img/light-speckle-tile.jpg');
+	height: 420px;
+	display: flex;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.article-heading-container {
+	margin: auto ;
+	max-width: 960px;
+	width: 100%;
+	padding: 80px 16px 0;
+}
+
+
+
